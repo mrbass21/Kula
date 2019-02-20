@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C58FB1C221D340600154D7E /* Kula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FB1A221D340600154D7E /* Kula.swift */; };
+		8C58FB1F221D346700154D7E /* UserCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FB1D221D346700154D7E /* UserCredential.swift */; };
+		8C58FB20221D346700154D7E /* NetflixCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FB1E221D346700154D7E /* NetflixCredential.swift */; };
 		8FE24DAA221CC52F005023AC /* Kula.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE24DA0221CC52F005023AC /* Kula.framework */; };
 		8FE24DAF221CC52F005023AC /* KulaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE24DAE221CC52F005023AC /* KulaTests.swift */; };
 		8FE24DB1221CC52F005023AC /* Kula.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE24DA3221CC52F005023AC /* Kula.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8FE24DFD221CE1A7005023AC /* Kula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE24DFC221CE1A7005023AC /* Kula.swift */; };
-		8FE24E02221CE45D005023AC /* UserCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE24DFF221CE45C005023AC /* UserCredential.swift */; };
-		8FE24E04221CE45D005023AC /* NetflixCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE24E01221CE45D005023AC /* NetflixCredential.swift */; };
-		8FE24E06221CE8AF005023AC /* KulaCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE24E05221CE8AF005023AC /* KulaCommon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,16 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C58FB1A221D340600154D7E /* Kula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kula.swift; sourceTree = "<group>"; };
+		8C58FB1D221D346700154D7E /* UserCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCredential.swift; sourceTree = "<group>"; };
+		8C58FB1E221D346700154D7E /* NetflixCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetflixCredential.swift; sourceTree = "<group>"; };
 		8FE24DA0221CC52F005023AC /* Kula.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kula.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE24DA3221CC52F005023AC /* Kula.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kula.h; sourceTree = "<group>"; };
 		8FE24DA4221CC52F005023AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FE24DA9221CC52F005023AC /* KulaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KulaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE24DAE221CC52F005023AC /* KulaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KulaTests.swift; sourceTree = "<group>"; };
 		8FE24DB0221CC52F005023AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FE24DFC221CE1A7005023AC /* Kula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kula.swift; sourceTree = "<group>"; };
-		8FE24DFF221CE45C005023AC /* UserCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCredential.swift; sourceTree = "<group>"; };
-		8FE24E01221CE45D005023AC /* NetflixCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetflixCredential.swift; sourceTree = "<group>"; };
-		8FE24E05221CE8AF005023AC /* KulaCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KulaCommon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C58FB21221D346C00154D7E /* Credential */ = {
+			isa = PBXGroup;
+			children = (
+				8C58FB1E221D346700154D7E /* NetflixCredential.swift */,
+				8C58FB1D221D346700154D7E /* UserCredential.swift */,
+			);
+			path = Credential;
+			sourceTree = "<group>";
+		};
 		8FE24D96221CC52E005023AC = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +86,10 @@
 		8FE24DA2221CC52F005023AC /* Kula */ = {
 			isa = PBXGroup;
 			children = (
-				8FE24DFE221CE41A005023AC /* Credential */,
+				8C58FB21221D346C00154D7E /* Credential */,
+				8C58FB1A221D340600154D7E /* Kula.swift */,
 				8FE24DA3221CC52F005023AC /* Kula.h */,
 				8FE24DA4221CC52F005023AC /* Info.plist */,
-				8FE24DFC221CE1A7005023AC /* Kula.swift */,
-				8FE24E05221CE8AF005023AC /* KulaCommon.swift */,
 			);
 			path = Kula;
 			sourceTree = "<group>";
@@ -95,15 +101,6 @@
 				8FE24DB0221CC52F005023AC /* Info.plist */,
 			);
 			path = KulaTests;
-			sourceTree = "<group>";
-		};
-		8FE24DFE221CE41A005023AC /* Credential */ = {
-			isa = PBXGroup;
-			children = (
-				8FE24E01221CE45D005023AC /* NetflixCredential.swift */,
-				8FE24DFF221CE45C005023AC /* UserCredential.swift */,
-			);
-			path = Credential;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,10 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FE24E06221CE8AF005023AC /* KulaCommon.swift in Sources */,
-				8FE24DFD221CE1A7005023AC /* Kula.swift in Sources */,
-				8FE24E02221CE45D005023AC /* UserCredential.swift in Sources */,
-				8FE24E04221CE45D005023AC /* NetflixCredential.swift in Sources */,
+				8C58FB1C221D340600154D7E /* Kula.swift in Sources */,
+				8C58FB20221D346700154D7E /* NetflixCredential.swift in Sources */,
+				8C58FB1F221D346700154D7E /* UserCredential.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
