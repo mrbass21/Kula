@@ -10,6 +10,10 @@
 		8FE24DAA221CC52F005023AC /* Kula.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE24DA0221CC52F005023AC /* Kula.framework */; };
 		8FE24DAF221CC52F005023AC /* KulaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE24DAE221CC52F005023AC /* KulaTests.swift */; };
 		8FE24DB1221CC52F005023AC /* Kula.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE24DA3221CC52F005023AC /* Kula.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FE24DFD221CE1A7005023AC /* Kula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE24DFC221CE1A7005023AC /* Kula.swift */; };
+		8FE24E02221CE45D005023AC /* UserCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE24DFF221CE45C005023AC /* UserCredential.swift */; };
+		8FE24E04221CE45D005023AC /* NetflixCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE24E01221CE45D005023AC /* NetflixCredential.swift */; };
+		8FE24E06221CE8AF005023AC /* KulaCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE24E05221CE8AF005023AC /* KulaCommon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		8FE24DA9221CC52F005023AC /* KulaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KulaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE24DAE221CC52F005023AC /* KulaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KulaTests.swift; sourceTree = "<group>"; };
 		8FE24DB0221CC52F005023AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FE24DFC221CE1A7005023AC /* Kula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kula.swift; sourceTree = "<group>"; };
+		8FE24DFF221CE45C005023AC /* UserCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCredential.swift; sourceTree = "<group>"; };
+		8FE24E01221CE45D005023AC /* NetflixCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetflixCredential.swift; sourceTree = "<group>"; };
+		8FE24E05221CE8AF005023AC /* KulaCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KulaCommon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +79,11 @@
 		8FE24DA2221CC52F005023AC /* Kula */ = {
 			isa = PBXGroup;
 			children = (
+				8FE24DFE221CE41A005023AC /* Credential */,
 				8FE24DA3221CC52F005023AC /* Kula.h */,
 				8FE24DA4221CC52F005023AC /* Info.plist */,
+				8FE24DFC221CE1A7005023AC /* Kula.swift */,
+				8FE24E05221CE8AF005023AC /* KulaCommon.swift */,
 			);
 			path = Kula;
 			sourceTree = "<group>";
@@ -84,6 +95,15 @@
 				8FE24DB0221CC52F005023AC /* Info.plist */,
 			);
 			path = KulaTests;
+			sourceTree = "<group>";
+		};
+		8FE24DFE221CE41A005023AC /* Credential */ = {
+			isa = PBXGroup;
+			children = (
+				8FE24E01221CE45D005023AC /* NetflixCredential.swift */,
+				8FE24DFF221CE45C005023AC /* UserCredential.swift */,
+			);
+			path = Credential;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +168,7 @@
 				TargetAttributes = {
 					8FE24D9F221CC52F005023AC = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					8FE24DA8221CC52F005023AC = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE24E06221CE8AF005023AC /* KulaCommon.swift in Sources */,
+				8FE24DFD221CE1A7005023AC /* Kula.swift in Sources */,
+				8FE24E02221CE45D005023AC /* UserCredential.swift in Sources */,
+				8FE24E04221CE45D005023AC /* NetflixCredential.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +366,7 @@
 		8FE24DB5221CC52F005023AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bumpsk.Kula;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +393,7 @@
 		8FE24DB6221CC52F005023AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +419,7 @@
 		8FE24DB8221CC52F005023AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WX5S3T4EY;
 				INFOPLIST_FILE = KulaTests/Info.plist;
@@ -409,6 +438,7 @@
 		8FE24DB9221CC52F005023AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WX5S3T4EY;
 				INFOPLIST_FILE = KulaTests/Info.plist;
