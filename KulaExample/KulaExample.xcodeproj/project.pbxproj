@@ -56,9 +56,9 @@
 		8C58FAF7221D2C0400154D7E = {
 			isa = PBXGroup;
 			children = (
-				8C58FB15221D2C2300154D7E /* Kula.framework */,
 				8C58FB02221D2C0400154D7E /* KulaExample */,
 				8C58FB01221D2C0400154D7E /* Products */,
+				8C58FB15221D2C2300154D7E /* Kula.framework */,
 			);
 			sourceTree = "<group>";
 		};
